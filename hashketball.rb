@@ -1,4 +1,4 @@
-
+require 'pry'
 
 def game_hash
   {:home=>
@@ -102,7 +102,7 @@ def game_hash
 
 end
 
-def num_points_scored name 
+def num_points_scored name
   player = game_hash[:home][:players].find {|p| p['player_name'] == name} or game_hash[:away][:players].find {|p| p['player_name'] == name}
-  binding.pry 
+  binding.pry
 end
