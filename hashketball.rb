@@ -1,7 +1,6 @@
 
 
 def game_hash
-  puts game_hash.values.first.keys
   {:home=>
     {:team_name=>"Brooklyn Nets",
      :colors=>["Black", "White"],
