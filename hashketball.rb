@@ -101,3 +101,6 @@ def game_hash
         "slam_dunks"=>12}]}}
 
 end
+
+def num_points_scored name 
+  player = game_hash[:home][:players].find {|p| p['player_name'] == name} or game_hash[:away][:players].find {|p| p['player_name'] == name}
